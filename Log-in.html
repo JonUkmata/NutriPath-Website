@@ -5,8 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
 </head>
+
+
+<style>
+    body{
+        font-family: sans-serif;
+
+    }
+
+  
+
+    .Sing-in-container{
+        width: 400px;
+
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 3px 10px;
+        border-radius: 15px;
+
+
+    }
+
+    
+    .Sing-in-container h1{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 38px;
+
+
+    }
+
+    .SI-elm{
+        margin-top: 40px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SI-elm input{
+        width: 330px;
+        margin: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid;
+        
+      
+    }
+
+
+
+    .buttons{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        
+        
+
+    }
+
+    .buttonSI{
+        width: 360px;
+        border-radius: 5px;
+        border: 1px solid;
+        padding: 8px;
+
+    }
+
+    .buttonCA{
+        margin-top: 65px;
+        width: 180px;
+        padding: 28px;
+        border-radius: 9px;
+        border: 1px solid;
+
+
+        
+        
+        
+    }
+
+
+
+
+</style>
+
 <body>
 
+
+
+
+    <div class="Sing-in-container"> 
+        <h1>Sing in</h1>
+
+    <form class="SI-elm">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <div class="buttons">
+        <button class="buttonSI">Sing in</button>
+        <p>Forgot password?</p>
+        <button class="buttonCA">Create account</button>
+    </div>
+ 
+
+    </form>
+    </div>
     
     
 </body>
