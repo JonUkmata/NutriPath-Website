@@ -15,6 +15,31 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+
+.NavBar{
+    flex-grow: 1;
+     margin-left:20px ;
+     margin-top: 20px;
+     margin-bottom: 10px;
+ }
+ .NavBar ul{
+     display: flex;
+     list-style: none;
+     justify-content: center;
+ }
+ .NavBar ul li{
+     margin: 0 15px;
+ }
+ .NavBar ul li a{
+     text-decoration: none;
+     color: rgb(49, 6, 6);
+     font-size: 18px;
+     font-weight: bold;
+    
+ }
+ .NavBar ul li a:hover{
+     color: black;
+ }
 /* Utility stylings */
 img{
     width: 100%;
@@ -61,7 +86,7 @@ img{
 .products{
     background: var();
     padding: 3.2rem 0;
-    background-color:#8076764a;
+    background-color:#201e1e4a;
     
 }
 .products .text-light{
