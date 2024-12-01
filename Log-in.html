@@ -106,6 +106,15 @@ color: white;
         color: rgb(148, 148, 148);
     }
 
+    .buttonSI a {
+            color: white;
+            text-decoration: none;
+            display: block; /* Bën që linku të mbulojë gjithë butonin */
+        }
+
+  
+    
+
 
 
 
@@ -122,7 +131,9 @@ color: white;
     <form class="SI-elm">
         <input type="email" placeholder="Email" required>
         <input type="password" placeholder="Password" required>
-        <button class="buttonSI">Sign in</button><br>
+        <button type="button" class="buttonSI">
+            <a href="http://127.0.0.1:3000/Home Page.html">Sign in</a>
+        </button><br>
         <a href="">Forgot password?</a><br>
         <button class="buttonCA">Create account</button>
     </div>
