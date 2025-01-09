@@ -16,9 +16,9 @@
     body{
         background: url("Foto1.jpg") ;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
         font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
     }
     header{
         display: flex;
@@ -47,6 +47,7 @@
         color: white;
         font-size: 18px;
         font-weight: bold;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
     }
     .NavBar ul li a:hover{
         color: black;
@@ -55,6 +56,7 @@
         float: right;
         margin-right: 20px;
     }
+    
     .Butoni button{
         background-color: black;
         color: white;
@@ -64,11 +66,12 @@
         border-radius: 10px;
         padding: 10px 20px;
         cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
     }
     .Butoni button:hover{
-        background-color:white;
+        background-color: rgb(255, 255, 255);
         color: black;
-
+        box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
     }
     .Teksti{
         float: left;
@@ -92,11 +95,91 @@
         text-align: center;
     }
 
-    .Butoni a{
-        text-decoration: none;
-        color: white;
-        display: block;
+    .blank{
+        height: 800px;
     }
+    .container{
+        margin-top: -20px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        height: 700px;
+    }
+
+    .container2{
+        display: flex;
+        gap: 150px;
+        justify-content: center;
+        margin-top: 50px;
+        height: 140px;
+    }
+    .pjesa1{
+        margin-top: 20px;
+    }
+    .Holder-C3{
+        display: flex;
+        justify-content: center;
+        margin-top: -190px;
+    }
+    .container3{
+        display: flex;
+        background-color:rgb(240, 219, 186) ;
+        flex-direction: row;
+        width: 80%;
+        height: 350px;
+        border: 1px;
+        border-radius: 30px;
+    }
+
+    .pjesa5{
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+    .pjesa6{
+        padding-right: 20px;
+    }
+    .Butoni2{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .Butoni2 button{
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s,color 0.3s,box-shadow 0.3s;
+    }
+    .Butoni2 button:hover{
+        background-color: rgb(255, 255, 255) ;
+        color: black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .pjesa6{
+        padding: 10px;
+        background:url("DALL·E 2024-12-24 10.37.59 - A woman exercising in a gym, seen from the back, performing a pull-up or resistance training on a wooden wall panel. The gym has a modern, minimalist .webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 300px;
+        margin-top: 20px;
+        border-radius: 20px;
+        margin-right: 10px;
+        color: white;
+    }
+    
+.text-photo{
+    background-color: rgba(0, 0, 0, 0.519);
+    padding: 20px;
+    border-radius: 20px;
+}
+
    </style>
 
 
@@ -120,7 +203,7 @@
         </ul>
      </div>
      <div class="Butoni">
-        <button><a href="http://127.0.0.1:3000/Log-in.html">Log In</a></button>
+        <button>Log In</button>
      </div>
 
     </header>
@@ -131,6 +214,56 @@
         <h1>with NutriPath</h1>
         <div class="Teksti1"> <p>NutriPath is dedicated to guiding you towards a healthier lifestyle through personalized nutrition plans. Discover the power of nutritious food and expert coaching to achieve your wellness goals</p></div>
     </div>
+
+    <div class="blank">
+    </div>
+
+    <div class="container">
+
+    <div class="pjesa1">
+        <h1 style="display: flex; justify-content: center; font-size: 400%;">Key Features Overview</h1>
+        <p style="display: flex; justify-content: center; margin-top: 20px; font-size: 150%;">Experience unique services focusing on individualized wellnes plans.</p>
+    </div>
+
+    <div class="container2">
+        <div class="pjesa2">
+            <h2 style="padding-top: 20px; font-size: 200%;"> Dedicated Support</h2>
+            <p style="padding-left: 25px; padding-top: 5px;">Focus on your wellness journey.</p>
+        </div>
+
+        <div class="pjesa3">
+            <h2 style="padding-top: 20px; font-size: 200%; padding-left: 10px;">Expert Guidance</h2>
+            <p style="padding-top: 5px;">Nurturing personalized health solutions.</p>
+        </div>
+
+        <div class="pjesa4">
+            <h2 style="padding-left: 50px; padding-top: 20px; font-size: 200%;">Quality Insights</h2>
+            <p style="padding-top: 6px;">Comprehensive and tailored approaches offered.</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="Holder-C3">
+
+            <div class="container3">
+                <div class="pjesa5">
+                    <h1 style="font-size:45px ;"> Our Experience</h1>
+                    <p style="padding-top: 20px; font-size: 20px;">With years of expertise, NUTRIPATH is dedicated to providing personalized wellness solutions that integrate modern and traditional practices for comprehensive health advancement, fostering overall well-being and enhancing individual lifestyles</p>
+                    <div class="Butoni2">
+                     <button>Explore more</button>
+                    </div>               
+                 </div>
+                 <div class="pjesa6">
+                    <div class="text-photo">
+                        <p style="padding-left: 20px;">With years of expertise, NUTRIPATH is dedicated to providing personalized wellness solutions that integrate modern and traditional practices for comprehensive health advancement, fostering overall well-being and enhancing individual lifestyles</p>
+                    </div>
+                    </div>
+
+            </div>
+        </div>
+
+
+
     
 </body>
 </html>
