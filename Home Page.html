@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriPath</title>
 
+
  
    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
     *{
         margin:0;
@@ -21,62 +23,81 @@
         font-family: Arial, Helvetica, sans-serif;
         height: 100vh;
     }
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: transparent;
-
-    }
-    .Logo{
-        width: 50px;
-        height: auto;
-    }
-    .NavBar{
-       flex-grow: 1;
-        margin-left:20px ;
-    }
-    .NavBar ul{
-        display: flex;
-        list-style: none;
-    }
-    .NavBar ul li{
-        margin: 0 15px;
-    }
-    .NavBar ul li a{
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
-    }
-    .NavBar ul li a:hover{
-        color: black;
-    }
-    .Butoni{
-        float: right;
-        margin-right: 20px;
-    }
     
-    .Butoni button{
-        background-color: black;
-        color: white;
-        font-size: 16px;
-        font-weight:bold ;
-        border: none;
-        border-radius: 10px;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
-    }
-    .Butoni button:hover{
-        background-color: rgb(255, 255, 255);
-        color: black;
-        box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
-    }
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+}
+.Logo{
+    width: 50px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.Logo:hover{
+    transform: scale(1.8);
+}
+
+
+
+.NavBar{
+   flex-grow: 1;
+    margin-left:20px ;
+}
+.NavBar ul{
+    display: flex;
+    list-style: none;
+}
+.NavBar ul li{
+    margin: 0 15px;
+
+}
+.NavBar ul li {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+}
+.NavBar ul li :hover{
+    color: black;
+}
+
+.NavBar li:hover{
+  
+    transform: scale(1.2);
+}
+
+.Butoni{
+    float: right;
+    margin-right: 20px;
+}
+
+.Butoni button{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight:bold ;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+}
+.Butoni button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
+    transform: scale(1.2);
+}
     .Teksti{
         float: left;
         color: white;
+
 
     }
     .Teksti{
@@ -89,11 +110,21 @@
     .Teksti h1{
         font-size: 50px;
         margin-bottom: 20px;
+        transition: all 0.7s  ease;
+
     }
+    .Teksti h1:hover{
+        transform: scale(1.2);
+    }
+
+
     .Teksti p{
         font-size: 18px;
         line-height: 1.6;
         text-align: center;
+        transition: all 0.7s  ease;
+
+        
     }
 
     .blank{
@@ -313,12 +344,12 @@
 
      <div class="NavBar">
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Recipes</li>
+            <li>Products</li>
+            <li>Contact</li>
 
         </ul>
      </div>
@@ -328,7 +359,7 @@
 
     </header>
     
-    <div class="Teksti">
+    <div class="Teksti" >
         <h1>Elevate your</h1>
         <h1>LifeStyle</h1>
         <h1>with NutriPath</h1>
@@ -418,7 +449,6 @@
 
 
 
-  <script src="C:\Users\jonuk\OneDrive\Desktop\NutriPath-Website\Slider.js"> </script>
 
 </body>
 </html>
