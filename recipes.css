@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f8fa;
+    font-family: Arial, Helvetica, sans-serif;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.NavBar{
+    flex-grow:1;
+    margin-left: 20px;
+}
+
+.NavBar ul{
+    display: flex;
+    list-style: none;
+}
+
+.NavBar ul li{
+    margin: 0 15px;
+}
+
+.NavBar ul li a{
+    text-decoration: none;
+    color: rgb(17, 12, 12) ;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s,color 0.3s,box-shadow 0.3s;
+}
+
+.NavBar ul li a:hover{
+    color:  rgb(163, 99, 99);
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.image-section img{
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+
+
+.text-section h2{
+   margin: 10px 0;
+   font-size: 45px;
+   color: #000;
+}
+
+.text-section p {
+    font-size: 30px;
+    margin: 5px 0 20px;
+    color: #555 ;
+}
+
+
+.Logo{
+    width: 50px;
+    height: auto;
+}
+
+.recipe-grid1{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 70px;
+}
+
+.recipe-content{
+    background-color: #fff ;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    text-align: center;
+}
+
+.recipe-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+ 
+.recipe-text{
+    padding: 10px 15px;
+}
+
+.recipe-text h3{
+    font-size: 20p;
+    color: #666 ;
+}
+
+.recipe-grid2{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 70px;
+}
+
+.recipe-content2{
+    background-color: #fff ;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    text-align: center;
+    
+}
+
+.recipe-image2 img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-text2{
+    padding: 10px 15px;
+}
+
+.recipe-text2 h3{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.recipe-text2 p{
+    font-size:16px;
+    color: #666;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .text-section h2{
+        font-size:30px ;
+    }
+    .text-section p{
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .image-section img{
+        width: 500px;
+        padding-left: 20px;
+
+}
+.text-section h2{
+    font-size:20px ;
+    margin-bottom: 15px;
+}
+.text-section p{
+    font-size: 17px;
+    margin-top: -15px;
+}
+
+
+}
+
+@media (max-width: 425px) {
+    .image-section img{
+        padding-left: 2px;
+
+    }
+    .text-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .text-section p {
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    .recipe-grid1, .recipe-grid2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .recipe-content, .recipe-content2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+   
+
+    .NavBar ul li a{
+        color: rgb(17, 12, 12) ;
+        font-size: 10px;
+    }
+    .NavBar{
+        margin-left: -10px;
+    }
+    .Logo{
+        width: 25px;
+        height: auto;
+    }
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .image-section img {
+        width: 100%; 
+    }
+
+   
+}
+
+@media (max-width: 320px) {
+    .image-section img {
+      width: 550px;
+    }
+    .text-section{
+    padding-left:100px ;
+    }
+    .text-section h2{
+      font-size: 40px;
+    }
+    .text-section p{
+        font-size: 25px;
+    }
+    .recipe-grid1, .recipe-grid2 {
+        
+        padding-left: 40px;
+    }
+
+}
