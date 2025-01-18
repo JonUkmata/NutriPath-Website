@@ -1,0 +1,93 @@
+body{
+    font-family: sans-serif;     
+    background-image: url('foto/Screenshot 2024-12-23 145631.png'); 
+    background-size: cover;  
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+    .Main-container{
+        width: 603px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        border: solid 5px;
+        padding: 10px;
+        border-color: #411906b4;
+        height: 670px;
+        margin-bottom: 00px;
+
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+
+
+    .CA-container input{
+        width: 253px;
+        padding: 20px;
+
+        border-radius: 5px;
+        border: solid 1px;
+        margin-left: 3px;
+    }
+
+    .Ca-elm input{
+        margin-top:20px;
+        width: 556px;
+        padding: 20px;
+        border-radius: 5px;
+        border: solid 1px;
+    }
+
+    
+    .Ca-elm  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .Ca-elm button {
+      width: 250px;
+      padding: 14px;
+      background-color: #bd7754;
+        border: solid 1px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .Ca-elm button:hover {
+  
+      background-color: #752805;
+      
+    }
+    .Gjinia input{
+    
+        margin-top: -1px;
+        width: 80px;
+        transform: scale(1.5);
+        margin-left: -15px;
+    
+    }
+    .Gjinia {
+    
+    margin-left: 10px;
+
+}
+
+.ERROR_Name{
+    display: flex;
+    gap: 190px;
+    margin-left: 10px;
+    
+
+}
+
+

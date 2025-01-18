@@ -4,235 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Stilizimi_News_Page.css">
 </head>
-
-<style>
-
-*{
-        margin:0;
-        padding: 0;
-    }
-
-    body{
-        background: url("Foto1.jpg") ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 100vh;
-    }
-    
-    header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-
-}
-.Logo{
-    width: 50px;
-    height: auto;
-    transition: all 0.3s ease;
-}
-
-.Logo:hover{
-    transform: scale(1.8);
-}
-
-
-
-.NavBar{
-   flex-grow: 1;
-    margin-left:20px ;
-}
-.NavBar ul{
-    display: flex;
-    list-style: none;
-}
-.NavBar ul li{
-    margin: 0 15px;
-
-}
-.NavBar ul li {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-
-}
-.NavBar ul li :hover{
-    color: black;
-}
-
-.NavBar li:hover{
-  
-    transform: scale(1.2);
-}
-
-.Butoni{
-    float: right;
-    margin-right: 20px;
-}
-
-.Butoni button{
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    font-weight:bold ;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
-}
-.Butoni button:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
-    transform: scale(1.2);
-}
-
-
-
-
-.NewsSlider{
-    display: flex;
-    width: 98%;
-    height: 600px;
-    overflow: hidden;
-    background-color: rgba(238, 214, 182, 0.13);
-    border-radius: 20px;
-    margin: 20px;
-
-}
-
-.Slides{
-    display: flex;
-    gap: 68px;
-    background-color: rgba(240, 190, 143, 0.486);
-    transition: transform 0.3s ease-in-out;
-    align-items: center;
-
-}
-
-.slide{
-    width: 405px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(228, 199, 163);
-    text-align: center;
-    margin-left: 130px;
-    box-shadow: 0 0   8px;
-    border-radius: 20px;
-    justify-content: center;
-
-
-}
-
-.image img{
-    margin-top: 20px;
-    width: 350px;
-    height: 280px;
-    background-attachment: fixed;
-    border-radius: 15px;
-    border: solid 1px;
-
-
-}
-.image {
-    width: 400px;
-    height: 300px;
-
-
-}
-
-.text{
-    width: 330px;
-    margin-top: 17px;
-    margin-left: 42px;
-}
-
-.date{
-    margin-top: 50px;
-}
-
-.buttonat {
-    position: absolute;
-    display: flex;
-    gap: 1650px;
-    margin-top: 250px;
-    z-index: 1;
-}
-
-.buttonat button{
-    text-size-adjust: 50px;
-    margin-left: 20px;
-    font-size: 60px;
-    border-radius: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: rgb(92, 78, 60);    
-    transition: background-color 0.25s ease;
-}
-
-button:hover{
-    background-color: rgb(235, 190, 122);
-
-}
-
-
-
-
-.end{
-        width: 100%;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.97);
-    }
-
-    .text-4{
-        display: flex;
-        gap: 100px;
-
-    }
-
-    .textE{
-        margin-top: 100px;
-        margin-left: 100px;
-        width: 200px;
-        color: white;
-
-    }
-    .cards{
-        margin-top: 100px;
-        margin-left: 400px;
-    }
-
-    .cards h1{
-        text-align: center;
-        margin-right: 400px;
-        color: white;
-    }
-
-    .follow-us{
-        float: right;
-        margin-left: 200px;
-        margin-top: 100px;
-        color: white;
-    }
-    .follow-us img{
-        width: 300px;
-        height: 70px;
-    }
-
-
-</style>
 
 <body>
 
     <header>
         <a href="logo.html">
-           <img src="logo_me_back-removebg-preview.png" alt="NutriPathLogo" class="Logo">
+           <img src="foto/logo_me_back-removebg-preview.png" alt="NutriPathLogo" class="Logo">
         </a>
    
         <div class="NavBar">
@@ -261,7 +40,7 @@ button:hover{
         <div class="Slides">
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
 
 
                 <div class="text">
@@ -277,7 +56,7 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214130.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214130.png" alt=""></div>
 
 
                 <div class="text">
@@ -293,24 +72,7 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214206.png" alt=""></div>
-
-
-                <div class="text">
-                    <p>Lorem Ipsum is simply dummy text of the printth the release of Letraset sheet Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                </div>
-
-                <div class="date">
-                    <p>January 12,2025</p>
-                 </div>
-
-            </div>
-
-
-
-            <div class="slide">
-
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214206.png" alt=""></div>
 
 
                 <div class="text">
@@ -327,7 +89,7 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
 
 
                 <div class="text">
@@ -344,7 +106,7 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
 
 
                 <div class="text">
@@ -361,7 +123,24 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
+
+
+                <div class="text">
+                    <p>Lorem Ipsum is simply dummy text of the printth the release of Letraset sheet Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+
+                <div class="date">
+                    <p>January 12,2025</p>
+                 </div>
+
+            </div>
+
+
+
+            <div class="slide">
+
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
 
 
                 <div class="text">
@@ -377,7 +156,7 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
 
 
                 <div class="text">
@@ -393,7 +172,7 @@ button:hover{
 
             <div class="slide">
 
-                <div class="image"> <img src="Screenshot 2025-01-12 214117.png" alt=""></div>
+                <div class="image"> <img src="foto/Screenshot 2025-01-12 214117.png" alt=""></div>
 
 
                 <div class="text">
@@ -419,13 +198,13 @@ button:hover{
             <div class="textE"><p>company about Us blog recepies news privacy and policy</p></div>
                 <div class="follow-us">
             <div class="SocialM"><p>Follow us on : </p></div> <br>
-            <img src="download copy.png" alt="">  
+            <img src="foto/download copy.png" alt="">  
                </div>  
         </div>
         
         <div class="cards">
             <h1>You can pay with all of this cards:</h1><br><br><br>
-            <img src="Screenshot 2025-01-11 224625.png" alt="">
+            <img src="foto/Screenshot 2025-01-11 224625.png" alt="">
         </div>
     
       </div>

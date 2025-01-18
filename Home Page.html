@@ -6,340 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriPath</title>
 
-
+<link rel="stylesheet" href="Stilizimi_Home_Page.css">
  
-   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
-
-    *{
-        margin:0;
-        padding: 0;
-    }
-
-    body{
-        background: url("Foto1.jpg") ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 100vh;
-    }
-    
-    header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-
-}
-.Logo{
-    width: 50px;
-    height: auto;
-    transition: all 0.3s ease;
-}
-
-.Logo:hover{
-    transform: scale(1.8);
-}
-
-
-
-.NavBar{
-   flex-grow: 1;
-    margin-left:20px ;
-}
-.NavBar ul{
-    display: flex;
-    list-style: none;
-}
-.NavBar ul li{
-    margin: 0 15px;
-
-}
-.NavBar ul li {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-
-}
-.NavBar ul li :hover{
-    color: black;
-}
-
-.NavBar li:hover{
-  
-    transform: scale(1.2);
-}
-
-.Butoni{
-    float: right;
-    margin-right: 20px;
-}
-
-.Butoni button{
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    font-weight:bold ;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
-}
-.Butoni button:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2) ;
-    transform: scale(1.2);
-}
-    .Teksti{
-        float: left;
-        color: white;
-
-
-    }
-    .Teksti{
-        max-width: 600px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .Teksti h1{
-        font-size: 50px;
-        margin-bottom: 20px;
-        transition: all 0.7s  ease;
-
-    }
-    .Teksti h1:hover{
-        transform: scale(1.2);
-    }
-
-
-    .Teksti p{
-        font-size: 18px;
-        line-height: 1.6;
-        text-align: center;
-        transition: all 0.7s  ease;
-
-        
-    }
-
-    .blank{
-        height: 800px;
-    }
-    .container{
-        margin-top: -20px;
-        background-color: antiquewhite;
-        display: flex;
-        flex-direction: column;
-        padding-top: 70px;
-        height: 700px;
-    }
-
-    .container2{
-        display: flex;
-        gap: 150px;
-        justify-content: center;
-        margin-top: 50px;
-        height: 140px;
-    }
-    .pjesa1{
-        margin-top: 20px;
-    }
-    .Holder-C3{
-        display: flex;
-        justify-content: center;
-        margin-top: -190px;
-    }
-    .container3{
-        display: flex;
-        background-color:rgb(240, 219, 186) ;
-        flex-direction: row;
-        width: 80%;
-        height: 350px;
-        border: 1px;
-        border-radius: 30px;
-        box-shadow: inset 0 0 10px;
-
-    }
-
-    .pjesa5{
-        margin-top: 50px;
-        padding-left: 20px;
-        
-    }
-    .pjesa6{
-        padding-right: 20px;
-        
-    }
-    .Butoni2{
-        display: flex;
-        margin-top: 20px;
-    }
-
-    .Butoni2 button{
-        font-size: 18px;
-        border-radius: 10px;
-        border: none;
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s,color 0.3s,box-shadow 0.3s;
-    }
-    .Butoni2 button:hover{
-        background-color: rgb(255, 255, 255) ;
-        color: black;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .pjesa6{
-        padding: 10px;
-        background:url("DALL·E 2024-12-24 10.37.59 - A woman exercising in a gym, seen from the back, performing a pull-up or resistance training on a wooden wall panel. The gym has a modern, minimalist .webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 300px;
-        margin-top: 20px;
-        border-radius: 20px;
-        margin-right: 10px;
-        color: white;
-        box-shadow:  0 0 10px;
-
-    }
-    
-.text-photo{
-    background-color: rgba(0, 0, 0, 0.519);
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.slider{
-    margin-top:300px;
-    margin-bottom:200px;
-    background-color:rgb(240, 219, 186);
-    width:1200px;
-    height: 500px;
-    display:flex;
-    justify-content:center;
-    overflow: hidden;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 10px;
-    padding: 50px;
-
-
-}
-
-.slides{
-    margin-top: 80px;
-    display:flex;
-    justify-content:center;
-    gap: 80px;
-    
-}
-.slides  p{
-    margin-top: 50px;
-   
-    
-}
-
-.slide{
-    min-width: 330px;
-    height:200px;
-}
-
-.slide img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow:  0 0 10px;
-    border: solid 1px;
-
-
-
-}
-
-.slider-Con{
-    margin-top: -200px;
-    display: flex;
-    width: 100%;
-    background-color: rgb(201, 179, 150);
-    display: flex;
-    justify-content: center;
-    
-}
-
-.thingsWedo{
-    clear: both;
-    float: right;
-}
-
-
-
-
-
-
-
-    .end{
-        width: 100%;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.87);
-    }
-
-    .text-4{
-        display: flex;
-        gap: 100px;
-
-    }
-
-    .textE{
-        margin-top: 100px;
-        margin-left: 100px;
-        width: 200px;
-        color: white;
-
-    }
-    .cards{
-        margin-top: 100px;
-        margin-left: 400px;
-    }
-
-    .cards h1{
-        text-align: center;
-        margin-right: 400px;
-        color: white;
-    }
-
-    .follow-us{
-        float: right;
-        margin-left: 200px;
-        margin-top: 100px;
-        color: white;
-    }
-    .follow-us img{
-        width: 300px;
-        height: 70px;
-    }
-
-
-
-
-   </style>
-
 
 </head>
 <body>
 
     <header>
      <a href="logo.html">
-        <img src="logo_me_back-removebg-preview.png" alt="NutriPathLogo" class="Logo">
+        <img src="foto/logo_me_back-removebg-preview.png" alt="NutriPathLogo" class="Logo">
      </a>
 
      <div class="NavBar">
@@ -353,8 +28,19 @@
 
         </ul>
      </div>
-     <div class="Butoni">
-        <button>Log In</button>
+     <div class="profile" >
+        <button onclick="ProfileinfoShow()"><img src="foto\profile_11917274.png" alt="" ></button>
+     </div>
+
+     <div class="profile-box " id="pBOX" style="position: absolute;">
+        <div class="prof-info"><strong>Name :</strong><p>Jon </p></div>
+        <div class="prof-info"><strong>Surname :</strong><p>Ukmata </p></div>
+        <div class="prof-info"><strong>Birthday :</strong><p>12/29/2024</p></div>
+        <div class="prof-info"><strong>Email :</strong><p>044992784 </p></div>
+        <div class="prof-info"><strong>Gender :</strong><p>Male</p></div>
+
+        <button class="edit">Edit</button>
+
      </div>
 
     </header>
@@ -421,9 +107,9 @@
      <h1 style="position: absolute; ">Amazing things we do for our Clients </h1>
 
         <div class="slides" id="slides">
-            <div class="slide"><img src="2148429342[1].jpg" alt=""> <p>sith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to </p></div>
-            <div class="slide"><img src="2149891455[1].jpg" alt=""> <p>ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to </p></div>
-            <div class="slide"><img src="DALL·E 2024-12-24 10.37.59 - A woman exercising in a gym, seen from the back, performing a pull-up or resistance training on a wooden wall panel. The gym has a modern, minimalist .webp" alt=""> <p>ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to </p></div>
+            <div class="slide"><img src="foto/2148429342[1].jpg" alt=""> <p>sith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to </p></div>
+            <div class="slide"><img src="foto/2149891455[1].jpg" alt=""> <p>ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to </p></div>
+            <div class="slide"><img src="foto/DALL·E 2024-12-24 10.37.59 - A woman exercising in a gym, seen from the back, performing a pull-up or resistance training on a wooden wall panel. The gym has a modern, minimalist .webp" alt=""> <p>ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to ith years of expertise, NUTRIPATH is dedicated to </p></div>
         </div>
 
      </div>
@@ -436,18 +122,18 @@
         <div class="textE"><p>company about Us blog recepies news privacy and policy</p></div>
             <div class="follow-us">
         <div class="SocialM"><p>Follow us on : </p></div> <br>
-        <img src="download copy.png" alt="">  
+        <img src="foto/download copy.png" alt="">  
            </div>  
     </div>
     
     <div class="cards">
         <h1>You can pay with all of this cards:</h1><br><br><br>
-        <img src="Screenshot 2025-01-11 224625.png" alt="">
+        <img src="foto/Screenshot 2025-01-11 224625.png" alt="">
     </div>
 
   </div>
 
-
+<script src="profilDisplay.js"></script>
 
 
 </body>

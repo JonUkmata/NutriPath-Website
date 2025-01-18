@@ -4,108 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create account</title>
+    <link rel="stylesheet" href="Stilizimi_Create_account.css">
 </head>
 
 <script src="JS-Creata-acc.js"> </script>
 
-    <style>
-         body{
-        font-family: sans-serif;     
-        background-image: url('Screenshot 2024-12-23 145631.png'); 
-        background-size: cover;  
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh
-    }
-        .Main-container{
-            width: 603px;
-            background-color: rgb(255, 255, 255);
-            border-radius: 20px;
-            border: solid 5px;
-            padding: 10px;
-            border-color: #411906b4;
-            height: 670px;
-            margin-bottom: 00px;
-
-        }
-
-        .title{
-            display: flex;
-            justify-content: center;
-        }
-        
-
-
-
-        .CA-container input{
-            width: 253px;
-            padding: 20px;
-
-            border-radius: 5px;
-            border: solid 1px;
-            margin-left: 3px;
-        }
-
-        .Ca-elm input{
-            margin-top:20px;
-            width: 556px;
-            padding: 20px;
-            border-radius: 5px;
-            border: solid 1px;
-        }
-
-        
-        .Ca-elm  {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-           
-        }
-        .Ca-elm button {
-          width: 250px;
-          padding: 14px;
-          background-color: #bd7754;
-            border: solid 1px;
-            color: rgb(255, 255, 255);
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        .Ca-elm button:hover {
-      
-          background-color: #752805;
-          
-        }
-        .Gjinia input{
-        
-            margin-top: -1px;
-            width: 80px;
-            transform: scale(1.5);
-            margin-left: -15px;
-        
-        }
-        .Gjinia {
-        
-        margin-left: 10px;
-    
-    }
-
-    .ERROR_Name{
-        display: flex;
-        gap: 190px;
-        margin-left: 10px;
-        
-
-    }
-   
-   
-
-  
-        
-    </style>
 
 <body>
 
@@ -113,6 +16,7 @@
     <div class="Main-container">
     <div class="CA-container">
         <div class="title">
+            <form>
         <h2>Create new Account</h2>
     </div>
         <input type="text" id="Emri"    onkeyup="validateE()"placeholder="Name" required>
@@ -123,7 +27,7 @@
         <input type="date" ><br>
         <div class="Gjinia">
             <p>Choose Gender :</p>
-        <label for="Male">Male</label><input type="radio" id="Male" name="Gender"><label for="Female">Female</label> <input type="radio" id="Female" name="Gender"><label for="Male">Other</label><input type="radio" id="other" name="Gender">
+        <label for="Male">Male</label><input type="radio" id="Male" name="Gender" required><label for="Female">Female</label> <input type="radio" id="Female" name="Gender"><label for="Male">Other</label><input type="radio" id="other" name="Gender">
     </div>
     </div>
     <div class="Ca-elm">
@@ -137,6 +41,7 @@
     </div>
 
     </div>
+</form>
     
 </body>
 </html>
