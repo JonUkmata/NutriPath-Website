@@ -1,0 +1,217 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f9f9f9 ;    
+    background-image: url('foto/Screenshot 2024-12-23 145631.png');
+
+    }
+    
+    header{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 99%;
+        
+        }
+        .Logo{
+        width: 50px;
+        height: auto;
+        transition: all 0.3s ease;
+        }
+        
+        .Logo:hover{
+        transform: scale(1.8);
+        }
+        
+        
+        
+        .NavBar{
+        flex-grow: 1;
+        margin-left:20px ;
+        }
+        .NavBar ul{
+        display: flex;
+        list-style: none;
+        }
+        .NavBar ul li{
+        margin: 0 15px;
+        
+        }
+        .NavBar ul li {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        
+        }
+        .NavBar ul li :hover{
+        color: black;
+        }
+        
+        .NavBar li:hover{
+        
+        transform: scale(1.2);
+        }
+        .profile img{
+            width: 70px;
+            height: 70px;
+        
+        }
+        .profile button{
+            border: solid 0;
+            background-color: transparent;
+        }
+        
+        .profile-box{
+            left: 77%;
+            top: 70px;
+            width: 380px;
+            height: 400px;
+            background-color:  rgb(201, 179, 150);
+            border-radius: 10px;
+            border: solid ;
+            transition: transform 0.3s ease;
+            display: none;
+        }
+
+        
+        
+        .profile-box h3{
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .prof-info{
+            width: 70%;
+            background-color: antiquewhite;
+            display: flex;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: solid 1px;
+        }
+        .edit {
+            margin-left: 160px;
+            margin-top: 40px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+        }        
+     .profile img{
+        width: 70px;
+        height: 70px;
+    
+    }
+    .profile button{
+        border: solid 0;
+        background-color: transparent;
+    }
+    
+    .profile-box{
+        left: 77%;
+        top: 70px;
+        width: 380px;
+        height: 400px;
+        background-color:  rgb(201, 179, 150);
+        border-radius: 10px;
+        border: solid ;
+        transition: transform 0.3s ease;
+        display: none;
+    }
+    
+    .profile-box h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .prof-info{
+        width: 70%;
+        background-color: antiquewhite;
+        display: flex;
+        margin: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        border: solid 1px;
+    }
+    .edit {
+        margin-left: 160px;
+        margin-top: 40px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+    }
+
+
+    
+     .recepies-sheet{
+        width: 60%;
+        background-color: antiquewhite;
+        padding: 50px;
+        margin: 50px;
+        border-radius: 20px;
+        border: solid 1px;
+        margin-left: 300px;
+     }
+     .recepies-sheet img {
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+     }
+
+     .Ingridients-Steps{
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        margin-left: 00px;
+     }
+
+
+     .DISH_DISCRIPTION{
+        display: flex;
+        gap: 140px;
+     }
+
+   
+
+     .end{
+        width: 100%;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.87);
+    }
+
+    .text-4{
+        display: flex;
+        gap: 100px;
+
+    }
+
+    .textE{
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 200px;
+        color: white;
+
+    }
+    .cards{
+        margin-top: 100px;
+        margin-left: 400px;
+    }
+
+    .cards h1{
+        text-align: center;
+        margin-right: 400px;
+        color: white;
+    }
+
+    .follow-us{
+        float: right;
+        margin-left: 200px;
+        margin-top: 100px;
+        color: white;
+    }
+    .follow-us img{
+        width: 300px;
+        height: 70px;
+    }
