@@ -308,19 +308,24 @@ float: right;
 }
 
 .profile-box{
-    left: 1450px;
+    left: 77%;
     top: 70px;
-    width: 400px;
+    width: 380px;
     height: 400px;
-    background-color: rgba(189, 111, 23, 0.911);
+    background-color:  rgb(201, 179, 150);
     border-radius: 10px;
     border: solid ;
     transition: transform 0.3s ease;
     display: none;
 }
 
+.profile-box h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
 .prof-info{
-    width: 50%;
+    width: 70%;
     background-color: antiquewhite;
     display: flex;
     margin: 20px;
@@ -329,10 +334,9 @@ float: right;
     border: solid 1px;
 }
 .edit {
-    margin-left: 190px;
+    margin-left: 160px;
     margin-top: 40px;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
-    bac
 }
 
