@@ -90,4 +90,55 @@ body{
 
 }
 
+@media (max-width: 1024px) {
+    .Main-container{
+        transform: scale(0.7) translate(-50%, -50%);
+        transform-origin: center center;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .Main-container {
+        transform: scale(0.5) translate(-50%, -50%);
+        transform-origin: center center;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .Main-container {
+        top: 15%;
+        left: -2%;
+        transform: scale(0.4) translate(-50%, -50%);
+    }
+}
+@media (max-width: 320px) {
+    body {
+        background-size: cover; 
+    }
+    .Main-container {
+        top: 15%;
+        left: -8%;
+        transform: scale(0.4) translate(-50%, -50%);
+    }
+}
+
 
