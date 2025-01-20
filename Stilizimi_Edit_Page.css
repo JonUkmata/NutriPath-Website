@@ -17,6 +17,7 @@ body{
         border-color: #411906b4;
         height: 670px;
         margin-bottom: 00px;
+        margin: 20px;
 
     }
 
@@ -92,3 +93,44 @@ body{
 }
 
 
+
+@media (max-width: 1024px) {
+    .Main-container {
+        transform: scale(0.7) translate(-50%, -50%);
+        transform-origin:center center ;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+   
+      
+}
+
+@media (max-width: 425px){
+    .Main-container {
+     transform: scale(0.4)translate(-50%,-50%);
+     transform-origin: center center;
+     position: absolute;
+     top: 20%;
+     left: 5%;
+
+}
+}
+
+@media (max-width: 375px){
+    .Main-container {
+      
+    left: 2%;
+
+    }
+}
+
+@media (max-width: 320px){
+    .Main-container{
+        left: -9%;
+    }
+}
