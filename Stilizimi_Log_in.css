@@ -3,6 +3,9 @@ body{
     background-image: url('foto/plant-based-milk-as-alternatives-dairy.jpg'); 
     background-size: cover;  
     background-repeat: no-repeat;
+    background-position:center ;
+    height: 100vh;
+    margin: 0px;
 }
 
 
@@ -97,3 +100,52 @@ color: white;
 
 
 
+@media (max-width: 1024px) {
+    .Sign-in-container {
+        transform: scale(0.7) translate(-50%, -50%);
+        transform-origin: center center;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .Sign-in-container {
+        transform: scale(0.5) translate(-50%, -50%);
+        transform-origin: center center;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .Sign-in-container {
+        left: 50%;
+        transform: scale(0.4) translate(-50%, -50%);
+    }
+}
+@media (max-width: 320px) {
+    body {
+        background-size: cover; 
+    }
+    .Sign-in-container {
+        top: 20%;
+        left: 10%;
+        transform: scale(0.4) translate(-50%, -50%);
+    }
+}
