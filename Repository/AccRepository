@@ -1,0 +1,39 @@
+<?php
+
+include ("Lidhja/LidhjaMeDatabaz.php");
+
+class AccRpository{
+    private $connection;
+
+    function __construct() {
+        $conn = new NutripathDB;
+        $this->connection = $conn ->startConnection();
+    
+    }
+
+    function insertUser($Useracc){
+        $conn = $this->connection;
+
+
+        $name = $user->getName();
+        $surname = $user->getSurname();
+        $birthday = $user->getBirthday();
+        $gender = $user->getGender();
+        $email = $user->getEmail();
+        $password = $user->getPassword();
+
+        $sql = "INSERT INTO useraccounts(name,surname,birthday,gender,email,password)
+        VALUES(?,?,?,?,?,?)"
+
+        $statement = $conn ->prepare($sql);
+        $statement->execute([$name,$surname,$birthday,$gender,$email,$password]);
+
+        echo "<script>alert('Urime llogarija juaj eshte aktive');</script>";
+
+
+
+    }
+
+}
+
+?>

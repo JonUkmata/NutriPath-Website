@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header>
+    <header> 
      <a href="logo.html">
         <img src="foto/logo_me_back-removebg-preview.png" alt="NutriPathLogo" class="Logo">
      </a>
