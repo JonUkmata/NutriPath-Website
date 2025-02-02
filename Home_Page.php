@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="Stilizimi_Home_Page.css">
 <link rel="stylesheet" href="Cookie.css">
-<script src="ScriptC.js" defer></script>
+<script src="ScriptCookies.js" defer></script>
 
  
 

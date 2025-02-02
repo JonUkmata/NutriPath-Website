@@ -1,0 +1,34 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const setCookie = (cName, cValue, expDays) => {
+        let date = new Date();
+        date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
+    }
+
+    const getCookie = (cName) => {
+        const name = cName + "=";
+        const cDecoded = decodeURIComponent(document.cookie);
+        const cArr = cDecoded.split(";");
+        let value;
+        cArr.forEach(val => {
+            if (val.trim().indexOf(name) === 0) value = val.substring(name.length);
+        })
+        return value;
+    }
+
+    const cookieBtn = document.querySelector("#cookies-btn");
+    if (cookieBtn) {
+        cookieBtn.addEventListener("click", () => {
+            document.querySelector("#cookies").style.display = "none";
+            setCookie("cookie", true, 30);
+        });
+    }
+
+    const cookieMessage = () => {
+        if (!getCookie("cookie"))
+            document.querySelector("#cookies").style.display = "block";
+    }
+
+    cookieMessage();
+});
