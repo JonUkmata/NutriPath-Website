@@ -34,6 +34,20 @@ class AccRpository{
 
     }
 
+    function GjejLlogarine($email,$password){
+        $conn=$this->connection;
+
+        $sql = "SELECT * FROM useraccounts WHERE email = ? AND password = ?";
+        $statement = $conn->prepare($sql);
+        $statement->execute([$email,$password]);
+
+        if($statement->rowCount() > 0){
+            return $statement->fetch(PDO::FETCH_ASSOC);
+        }else{
+            return null;
+        }
+    }
+
 }
 
 ?>

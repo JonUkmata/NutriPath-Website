@@ -44,7 +44,7 @@ list-style: none;
 margin: 0 15px;
 
 }
-.NavBar ul li {
+.NavBar ul li a{
 text-decoration: none;
 color: white;
 font-size: 18px;

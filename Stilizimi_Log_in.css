@@ -73,7 +73,7 @@ color: white;
 }
 
 
-.buttonCA{
+.buttonCA {
     margin-top: 65px;
     width: 180px;
     padding: 28px;
@@ -88,14 +88,21 @@ color: white;
     
 }
 
+.CABTT a{
+
+   color: #ffffff;
+   text-decoration:none;
+    
+}
+
 .buttonCA:hover{
     background-color: rgb(109, 54, 10);
 
 }
 
-.Sign-in-container a{
+.FP a{
     text-decoration: none;
-    color: rgb(148, 148, 148);
+    color: rgb(255, 255, 255);
 }
 
 

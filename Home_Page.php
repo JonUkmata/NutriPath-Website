@@ -1,3 +1,23 @@
+
+<?php
+session_start();
+
+if (isset($_SESSION['user'])) {
+    $user = $_SESSION['user'];
+    $name = $user['name'];
+    $surname = $user['surname'];
+    $birthday = $user['birthday'];
+    $email = $user['email'];
+    $gender = $user['gender'];
+} else {
+    header('Location: Log-in.php');
+    exit();
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +27,16 @@
     <title>NutriPath</title>
 
 <link rel="stylesheet" href="Stilizimi_Home_Page.css">
- 
+ <style>
+
+.NavBar ul li a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+ </style>
 
 </head>
 <body>
@@ -19,12 +48,12 @@
 
      <div class="NavBar">
         <ul>
-            <li>About</li>
-            <li>Services</li>
-            <li>Blog</li>
-            <li>Recipes</li>
-            <li>Products</li>
-            <li>Contact</li>
+            <li><a href="Home_Page.php">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="News-Page.php" >Blog</a></li>
+            <li><a href="recipes.php">Recipes</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="Contact.php">Contact</a></li>
 
         </ul>
      </div>
@@ -34,13 +63,13 @@
 
      <div class="profile-box " id="pBOX" style="position: absolute;">
         <h3>Your information</h3>
-        <div class="prof-info"><strong>Name :</strong><p>Jon </p></div>
-        <div class="prof-info"><strong>Surname :</strong><p>Ukmata </p></div>
-        <div class="prof-info"><strong>Birthday :</strong><p>12/29/2024</p></div>
-        <div class="prof-info"><strong>Email :</strong><p>044992784 </p></div>
-        <div class="prof-info"><strong>Gender :</strong><p>Male</p></div>
+        <div class="prof-info"><strong>Name :</strong><p><?php echo $name; ?> </p></div>
+        <div class="prof-info"><strong>Surname :</strong><p><?php echo $surname; ?> </p></div>
+        <div class="prof-info"><strong>Birthday :</strong><p><?php echo $birthday; ?></p></div>
+        <div class="prof-info"><strong>Email :</strong><p><?php echo $email; ?> </p></div>
+        <div class="prof-info"><strong>Gender :</strong><p><?php echo $gender; ?></p></div>
 
-        <button class="edit"><a href="Edit_information.html" style="text-decoration: none; color: rgb(0, 0, 0);">Edit</a></button>
+        <button class="edit"><a href="Edit_information.php" style="text-decoration: none; color: rgb(0, 0, 0);">Edit</a></button>
 
      </div>
 

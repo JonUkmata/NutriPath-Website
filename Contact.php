@@ -1,3 +1,15 @@
+
+<?php
+include ("Lidhja/LidhjaMeDatabaz.php");
+
+$db = new NutripathDB();
+$conn = $db->Konektohu();
+
+$sql = "SELECT img, text, date FROM news";
+$result = $conn->query($sql);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +17,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="pp.css">
+
+    <style>
+
+.NavBar ul li a{
+text-decoration: none;
+color:black;
+font-size: 18px;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+ </style>
 </head>
 <body>
     <header>
@@ -14,12 +37,12 @@
 
         <div class="NavBar">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+            <li><a href="Home_Page.php">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="News-Page.php" >Blog</a></li>
+            <li><a href="recipes.php">Recipes</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
         </header>

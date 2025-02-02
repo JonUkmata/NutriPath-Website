@@ -6,6 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="recipes.css">
 
+    <style>
+
+.NavBar ul li a{
+text-decoration: none;
+color:black;
+font-size: 18px;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+ </style>
+
 </head>
 
 
@@ -16,12 +27,12 @@
         </a>
         <div class="NavBar">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="#">Contact</a></li>
+            <li><a href="Home_Page.php">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="News-Page.php" >Blog</a></li>
+            <li><a href="recipes.php">Recipes</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
     </header>

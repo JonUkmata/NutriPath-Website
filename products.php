@@ -7,6 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="StilizimiNavBar.css">
+        <style>
+
+.NavBar ul li a{
+text-decoration: none;
+color:black;
+font-size: 18px;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+ </style>
 
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
@@ -18,13 +28,12 @@
    
         <div class="NavBar">
            <ul>
-               <li>About</li>
-               <li>Services</li>
-               <li>Blog</li>
-               <li>Recipes</li>
-               <li>Products</li>
-               <li>Contact</li>
-   
+           <li><a href="Home_Page.php">Home</a></li>
+           <li><a href="">Services</a></li>
+            <li><a href="News-Page.php" >Blog</a></li>
+            <li><a href="recipes.php">Recipes</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="Contact.php">Contact</a></li>
            </ul>
         </div>
         <div class="Butoni">

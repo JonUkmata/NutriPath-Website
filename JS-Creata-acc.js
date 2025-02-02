@@ -5,10 +5,9 @@ function validateE(){
 
     const nameRegex= /^[a-zA-Z]{3,}$/;
 
-    if(nameRegex.test(nameInput)){        //nameinpit.match(namereges)
+    if(nameRegex.test(nameInput)){      
          errorMessage.innerHTML = "<p style='color:green' >'Emri eshte valid </p>";
-         //errorMessage.innerHTML="Emri eshte valid"
-         //errorMessage.style.color="green"
+     
     }else{
         errorMessage.innerHTML = "<p style='color:red' >'Emri nuk eshte valid </p>";
     }
@@ -20,10 +19,9 @@ function validateM(){
 
     const nameRegex= /^[a-zA-Z]{3,}$/;
 
-    if(nameRegex.test(nameInput)){        //nameinpit.match(namereges)
+    if(nameRegex.test(nameInput)){        
          errorMessage.innerHTML = "<p style='color:green' >'Mbiemri eshte valid </p>";
-         //errorMessage.innerHTML="Emri eshte valid"
-         //errorMessage.style.color="green"
+     
     }else{
         errorMessage.innerHTML = "<p style='color:red' >'Mbiemri nuk eshte valid </p>";
     }

@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $birthday = $_POST['birthday'];
+    $email = $_POST['email'];
+    $gender = $_POST['gender'];
+
+    $_SESSION['user'] = [
+        'name' => $name,
+        'surname' => $surname,
+        'birthday' => $birthday,
+        'email' => $email,
+        'gender' => $gender
+    ];
+
+    header('Location: Home_Page.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +50,7 @@
         <input type="date" name="birthday" ><br>
         <div class="Gjinia" name="gender">
             <p>Choose Gender :</p>
-        <label for="Male">Male</label><input type="radio" id="Male" name="gender" required><label for="Female">Female</label> <input type="radio" id="Female" name="gender"><label for="Other">Other</label><input type="radio" id="other" name="gender">
+        <label for="Male">Male</label><input type="radio" id="Male" value="male" name="gender" required><label for="Female">Female</label> <input type="radio" id="Female" name="gender" value="female"><label for="Other">Other</label><input type="radio" id="other" name="gender" value="other">
     </div>
     </div>
     <div class="Ca-elm">
@@ -45,6 +68,8 @@
 
     </div>
 </form>
+
+
     
 </body>
 </html>
