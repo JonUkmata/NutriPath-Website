@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 <?php
 session_start();
 
@@ -16,10 +15,6 @@ if (isset($_SESSION['user'])) {
 }
 ?>
 
-=======
-
-
->>>>>>> 52d4362fcdde3b07db484cab86f486712759d40a
 
 
 
