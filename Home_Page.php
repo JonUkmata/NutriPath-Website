@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <?php
 session_start();
 
@@ -15,6 +16,10 @@ if (isset($_SESSION['user'])) {
 }
 ?>
 
+=======
+
+
+>>>>>>> 52d4362fcdde3b07db484cab86f486712759d40a
 
 
 
@@ -40,6 +45,22 @@ transition: all 0.3s ease;
 
 </head>
 <body>
+<?php
+        include 'db_config.php';
+        $sql = "SELECT * FROM photos";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo '<img src="'.$row["filepath"].'" alt="'.$row["filename"].'">';
+            }
+        } else {
+            echo "No photos found.";
+        }
+        $conn->close();
+        ?>
+
+
 
     <header> 
      <a href="logo.html">
